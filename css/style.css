@@ -12,7 +12,7 @@
 }
 
 .container {
-	max-width: 1024px;
+	max-width: 320px;
 	margin: 0 auto;
 	height: 100vh;
 	display: flex;
@@ -113,12 +113,9 @@
 .battle-field {
   margin-top: 10px;
 	display: flex;
-	-webkit-touch-callout: none;
-  	-webkit-user-select: none;   
- 	-khtml-user-select: none;    
-  	-moz-user-select: none;      
- 	-ms-user-select: none;       
- 	user-select: none; 
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -134,7 +131,6 @@
 	justify-content: center;
 	align-items: center;
 	font-weight: bold;
-
 }
 .targeted{
 	width: 65px;
@@ -208,5 +204,12 @@
  
 }
 .finish button{
- 
-}
+	background-color: #303030;
+border-radius: 10px;
+padding: 30px;
+font-size: 16px;
+color: white;
+font-weight: bold;
+box-shadow: 0 0 50px black;
+cursor: pointer;
+  }
