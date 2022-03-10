@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<title>Sea Battle</title>
+
+</head>
+
+<body>
+	<div class="sea-battle">
+		<div class="container">
+			<div class="start">
+				<h1>Морський бій</h1>
+				<p id="rules-btn" onclick="showHideRules()"><span id="showHide">Показати</span> правила гри</p>
+				<div class="rules" style="display: none">
+					<p>"Обери рівень складності та потопи всі ворожі кораблі за визначену кількість спроб!"</p>
+					<p><b><span class='easy'>Легкий:</span></b><br>5 кораблів<br>1 ворожий корабель<br> 3 спроби</p>
+					<p><b><span class='medium'>Нормальний:</span></b><br>7 кораблів<br>2 ворожих корабля<br> 3 спроби</p>
+					<p><b><span class='hard'>Важкий:</span></b><br>9 кораблів<br>3 ворожих корабля<br> 3 спроби</p>
+				</div>
+				<div class="start__item">
+					<form>Обери рівень складності:
+						<select>
+							<option value="1" title="5 кораблів / 1 ворожий корабель / 3 спроби">Легкий</option>
+							<option value="2" title="7 кораблів / 2 ворожих корабля / 3 спроби">Нормальний</option>
+							<option value="3" title="9 кораблів / 3 ворожих корабля / 3 спроби">Важкий</option>
+						</select>
+					</form>
+				</div>
+				<button id="start-btn" onclick="pushGame()">Погнали!</button>
+			</div>
+		</div>
+	</div>
+	<script>
+
+	</script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
